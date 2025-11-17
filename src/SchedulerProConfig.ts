@@ -8,15 +8,15 @@ const schedulerproProps: BryntumSchedulerProProps = {
     barMargin  : 15,
     eventStyle : 'colored',
     viewPreset : 'hourAndDay',
-
     columns : [
         { type : 'resourceInfo', width : 150 }
     ],
-
     project : {
         autoLoad: false
+    },
+    onDataChange(event){
+        console.log('Data changed:', event);
     }
-
 };
 
 export { schedulerproProps };
